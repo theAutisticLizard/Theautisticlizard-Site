@@ -4,13 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Poems – The Autistic Lizard</title>
+    <style>
+  /* Prevenir FOUC - ocultar contenido hasta que CSS cargue */
+  body {
+    visibility: hidden;
+    opacity: 0;
+  }
+  
+  body.loaded {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+  }
+</style>
     <link rel="stylesheet" href="https://theautisticlizard.in/css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Telex&display=swap" rel="stylesheet">
 
 </head>
-
+<script>
+  // Mostrar contenido cuando todo cargue
+  document.addEventListener('DOMContentLoaded', function() {
+    document.body.classList.add('loaded');
+  });
+</script>
 <body>
 
 <div class="page-wrapper">
