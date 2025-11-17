@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://theautisticlizard.in/sitemap.xml
